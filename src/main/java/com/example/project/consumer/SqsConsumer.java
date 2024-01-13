@@ -8,9 +8,11 @@ import com.amazonaws.services.sqs.model.Message;
 import com.amazonaws.services.sqs.model.ReceiveMessageRequest;
 import com.amazonaws.services.sqs.model.ReceiveMessageResult;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class SqsConsumer {
     private final AmazonSQSClient amazonSQSClient;
 
